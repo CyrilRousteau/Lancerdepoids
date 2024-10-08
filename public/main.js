@@ -156,7 +156,7 @@ class ScoreScene extends Phaser.Scene {
     const background = this.add.image(400, 300, 'scoreBg');
     background.setDisplaySize(this.sys.game.config.width, this.sys.game.config.height);
 
-    const score = (data.score || 0) * 20;
+    const score = (data.score || 0) * 20 - 10;
 
     const centerX = this.sys.game.config.width / 2;
     const centerY = this.sys.game.config.height / 2 + 50; 
